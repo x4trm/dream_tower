@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content%}
+    <h1>Skontaktuj się z nami</h1>
+    <form method="POST",action="">
+        {{ form.hidden_tag() }}
+        <fieldset>
+            <div class="form-group">
+                {{ form.mail.label(class="form-label")}}
+                {{ form.mail(id="mail",class="form-control") }}
+            </div>
+            <div class="form-group">
+                {{ form.temat.label(class="form-label")}}
+                {{ form.temat(id="temat",class="form-control") }}
+            </div>
+        <div class="form-group">
+            {{ form.wiadomosc.label(class="form-label mt-4")}}
+            {{ form.wiadomosc(class="form-control" ,id="wiadomosc", rows="3", style="margin-top: 0px; margin-bottom: 0px; height: 271px;") }}
+
+        </div>
+        </fieldset>
+        <div class="card-body">
+             {{ form.submit( id="submit",class="btn btn-secondary") }}
+      </div>
+    </form>
+	<br>
+
+{% endblock content %}
+
+

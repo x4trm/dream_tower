@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content%}
+    <h1>Oferty Pracy w Dream Tower</h1>
+    {% for work in works %}
+
+        <div class="card mb-3">
+          <h3 class="card-header">{{ work.position }}</h3>
+          <div class="card-body">
+                    <p class="card-text">Wymagania: {{work.needments}}</p>
+                    <p class="card-text">Co oferujemy: {{work.benefits}}</p>
+          </div>
+          <div class="card-body">
+              <a href="/kontakt"><button type="button" class="btn btn-secondary">Skontaktuj się z nami</button></a>
+          </div>
+
+        </div>
+
+    {% endfor %}
+{% endblock content %}
+
+

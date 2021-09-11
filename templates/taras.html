@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% block content%}
+    <h1>Taras 95 metrów Nad Ziemią</h1>
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-bs-toggle="tab" href="#home">Godziny Otwarcia</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-bs-toggle="tab" href="#info">Informacje</a>
+  </li>
+
+
+</ul>
+<div id="myTabContent" class="tab-content">
+  <div class="tab-pane fade show active" id="home">
+    <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Dzień Tygodnia</th>
+      <th scope="col">Godzina Otwarcia</th>
+      <th scope="col">Godzina zamknięcia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Poniedziałek</th>
+      <td>9.00</td>
+      <td>16.00</td>
+    </tr>
+    <tr>
+      <th scope="row">Wtorek</th>
+      <td>9.00</td>
+      <td>18.00</td>
+    </tr>
+    <tr>
+      <th scope="row">Środa</th>
+      <td>9.00</td>
+      <td>13.00</td>
+    </tr>
+    <tr>
+      <th scope="row">Czwartek</th>
+      <td>10.00</td>
+      <td>18.00</td>
+    </tr>
+    <tr>
+      <th scope="row">Piątek</th>
+      <td>10.00</td>
+      <td>20.00</td>
+    </tr>
+    <tr>
+      <th scope="row">Sobota</th>
+      <td>12.00</td>
+      <td>22.00</td>
+    </tr>
+    <tr>
+      <th scope="row">Niedziela</th>
+      <td>12.00</td>
+      <td>20.00</td>
+    </tr>
+
+</table>
+  </div>
+  <div class="tab-pane fade" id="info">
+    <pre>
+
+
+      Bilet wstepu dla osoby pełnoletniej to 15 zł, koszt biletu dla osoby niepełnoletniej to 7 zł.
+      Dzieci i młodzież poniżej 13 roku życia a także osoby niepełnosprawne mogą wejść na taras widokowy za darmo.
+      Na taras można wejść po schodach a także wjechać jedną z 5 wind.
+      Osoby pracujące w firmach znajdujących się w Dream Tower mogą skorzystac z bezpłatnego wejścia wraz z osobą towarzyszącą.
+      Rezerwacje Tarasu widokowego są możliwe nie tylko w godzinach otwarcia, ale także o ustalonej godzinie z biurem wieżowca Dream Tower.
+      Cena rezerwacji tarasu uzależniona jest od godzin w jakich odbywa się rezerwacja a także dnia rezerwacji.
+      W celu uzyskania więcej informacji prosimy o kontakt z biurem.
+    </pre>
+    <div class="card-body">
+      <a href="/kontakt"><button type="button" class="btn btn-secondary">Skontaktuj się z nami</button></a>
+    </div>
+  </div>
+
+
+
+{% endblock content %}
+
+

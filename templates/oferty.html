@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content%}
+    <h1>Wolne Lokale w Dream Tower</h1>
+    {% for lokal in lokale %}
+
+        <div class="card mb-3">
+          <h3 class="card-header">{{ lokal.floor }} piętro</h3>
+          <div class="card-body">
+                    <p class="card-text">Nr ogłoszenia: {{lokal.number_id}}</p>
+                    <p class="card-text">Powierzchnia: {{lokal.surface}} mkw</p>
+                    <p class="card-text">Roczny czynsz: {{lokal.rent}} PLN</p>
+          </div>
+          <div class="card-body">
+              <a href="/kontakt"><button type="button" class="btn btn-secondary">Skontaktuj sie z nami</button></a>
+          </div>
+
+        </div>
+
+    {% endfor %}
+{% endblock content %}
+
+

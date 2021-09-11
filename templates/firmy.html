@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content%}
+    <h1>Firmy Znajdujące się w Wieżowcu</h1>
+    {% for firma in firmy%}
+
+        <div class="card mb-3">
+          <h3 class="card-header">{{ firma.name }}</h3>
+          <div class="card-body">
+                    <p class="card-text">Piętro: {{ firma.floor }}</p>
+                    <p class="card-text">Numer Telefonu: {{firma.number}}</p>
+                    <p class="card-text">Email: {{firma.email}}</p>
+          </div>
+          <div class="card-body">
+              <a href="#"><button type="button" class="btn btn-secondary">Przejdź Na stronę Firmy</button></a>
+          </div>
+
+        </div>
+
+    {% endfor %}
+{% endblock content %}
+
+
